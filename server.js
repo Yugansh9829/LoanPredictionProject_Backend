@@ -9,15 +9,15 @@ app.use(cors());
 app.use(Routes);
 
 dotenv.config();
-
+const port = process.env.PORT || 6010;
 mongoose
 .connect(process.env.URI)
 .then(()=>{
-    app.listen(process.env.PORT,(req,res,err)=>{
+    app.listen(port,(req,res,err)=>{
         if(err){
             console.log({ err : err.message});
         }else{
-            console.log(`server is live at port ${process.env.PORT}`);
+            console.log(`server is live at port ${port}`);
         }
     })
     console.log("successfully connected to database");
