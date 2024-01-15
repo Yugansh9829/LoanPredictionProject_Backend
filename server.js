@@ -23,7 +23,7 @@ mongoose
     console.log("successfully connected to database");
 })
 .catch((err)=>{
-    console.log("error occured\n", err.message);
+    console.log("error occured while connecting to database\n", err.message);
 })
 
 
