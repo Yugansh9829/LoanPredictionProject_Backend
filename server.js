@@ -11,7 +11,7 @@ app.use(Routes);
 dotenv.config();
 const port = process.env.PORT || 6010;
 mongoose
-.connect(process.env.URI)
+.connect("mongodb://0.0.0.0:27017/gfg_database")
 .then(()=>{
     app.listen(port,(req,res,err)=>{
         if(err){
