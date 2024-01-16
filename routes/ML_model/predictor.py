@@ -1,7 +1,6 @@
 import pickle
 import sys
 import json
-import pandas as pd
 
 
 def load_model(model_path):
