@@ -14,14 +14,15 @@ const port = process.env.PORT || 6010;
 mongoose
 .connect(process.env.URI)
 .then(()=>{
-    app.listen(port,(req,res,err)=>{
-        if(err){
-            console.log("error occured and app is not live and not listening",err.message);
-        }else{
+    try{
+        app.listen(port,(req,res)=>{
             console.log(`server is live at port ${port}`);
-        }
-    })
-    console.log("successfully connected to database");
+        })
+        console.log("successfully connected to database");
+    }catch(err){
+        console.log('some error occured while setting app to listen on port :', err.message);
+    }
+    
 })
 .catch((err)=>{
     console.log("error occured while connecting to database\n", err.message);
