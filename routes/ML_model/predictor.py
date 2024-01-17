@@ -1,3 +1,6 @@
+import os
+os.environ['PATH'] = "/opt/render/.local/bin:" + os.environ['PATH']
+
 import pickle
 import sys
 import sklearn
