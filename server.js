@@ -16,7 +16,7 @@ mongoose
 .then(()=>{
     app.listen(port,(req,res,err)=>{
         if(err){
-            console.log({ err : err.message});
+            console.log("error occured and app is not live and not listening",err.message);
         }else{
             console.log(`server is live at port ${port}`);
         }
