@@ -1,6 +1,7 @@
 import pickle
 import sys
 import json
+import sklearn
 
 def load_model(model_path):
     with open(model_path, 'rb') as file:
