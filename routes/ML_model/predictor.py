@@ -1,5 +1,6 @@
 import pickle
 import sys
+import sklearn
 import json
 
 def load_model(model_path):
