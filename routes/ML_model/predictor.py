@@ -1,10 +1,6 @@
 import pickle
 import sys
-import sklearn
 import json
-
-print("Python Version:", sys.version)
-print("scikit-learn Version:", sklearn.__version__)
 
 def load_model(model_path):
     with open(model_path, 'rb') as file:
