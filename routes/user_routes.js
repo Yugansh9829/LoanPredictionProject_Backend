@@ -2,7 +2,6 @@ import express from "express";
 const app = express();
 import user from "../models/user_model.js";
 import loan_data from "../models/loan_model.js";
-import runPythonScript from "./ML_model/python-runner.js";
 const routes = express.Router();
 app.use(express.json());
 

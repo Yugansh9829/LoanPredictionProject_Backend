@@ -1,2 +1,0 @@
-# buildCommand: pipenv install --python 3.10.6
-# startCommand: pipenv run predictor.py
